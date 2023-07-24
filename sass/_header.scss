@@ -111,5 +111,24 @@
        top: 16rem;
     }
 
+    .midia{
+        text-decoration: none;
+        color: white;
+        img{
+            width: 40px;
+        }
+    }
+
+    .facebook{
+        position: absolute;
+        left: 10px;
+        top: 21rem;
+    }
+
+    .whatsapp{
+        position: absolute;
+        left: 10px;
+        top: 24.5rem;
+    }
     
 } // END CLASS header-content-container

@@ -105,4 +105,21 @@
 .header-content-container .estyle4 {
   transform: rotate(130deg);
   top: 16rem;
+}
+.header-content-container .midia {
+  text-decoration: none;
+  color: white;
+}
+.header-content-container .midia img {
+  width: 40px;
+}
+.header-content-container .facebook {
+  position: absolute;
+  left: 10px;
+  top: 21rem;
+}
+.header-content-container .whatsapp {
+  position: absolute;
+  left: 10px;
+  top: 24.5rem;
 }/*# sourceMappingURL=style.css.map */
