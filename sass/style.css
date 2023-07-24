@@ -139,7 +139,7 @@ nav {
   left: 0;
   right: 0;
   margin: auto;
-  bottom: 0;
+  bottom: 10px;
   width: 80%;
   height: 50px;
   background: linear-gradient(#EE8A9B, #FFC0CB, #EE8A9B);
