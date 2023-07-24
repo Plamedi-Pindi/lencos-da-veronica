@@ -1,1 +1,23 @@
 @import './color';
+
+nav{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    width: 80%;
+    height: 50px;
+    background-color: $primary;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+}

@@ -13,8 +13,12 @@
   box-shadow: 1px 1px 10px #ece9e9;
   width: 100%;
 }
+.logo-theme a {
+  text-decoration: none;
+  outline: none;
+}
 .logo-theme .logo-theme-content {
-  height: 8vh;
+  height: 6vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,10 +112,14 @@
 }
 .header-content-container .midia {
   text-decoration: none;
-  color: white;
+  background-color: white;
 }
 .header-content-container .midia img {
   width: 40px;
+  background-color: #fcf3f3;
+}
+.header-content-container a:link {
+  color: red;
 }
 .header-content-container .facebook {
   position: absolute;
@@ -122,4 +130,24 @@
   position: absolute;
   left: 10px;
   top: 24.5rem;
+}
+
+nav {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  width: 80%;
+  height: 50px;
+  background-color: #FFC0CB;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
 }/*# sourceMappingURL=style.css.map */

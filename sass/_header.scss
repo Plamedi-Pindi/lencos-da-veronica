@@ -5,8 +5,13 @@
     box-shadow: 1px 1px 10px #ece9e9;
     width: 100%;
 
+    a{
+        text-decoration: none;
+        outline: none;
+    }
+   
     .logo-theme-content{
-        height: 8vh;
+        height: 6vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -113,10 +118,15 @@
 
     .midia{
         text-decoration: none;
-        color: white;
+        background-color: white;
         img{
             width: 40px;
+            background-color: #fcf3f3;
         }
+    }
+
+    a:link{
+        color: red;
     }
 
     .facebook{
