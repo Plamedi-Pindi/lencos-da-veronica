@@ -176,7 +176,7 @@ nav a {
 #aboutUs div h2 {
   margin-bottom: 10px;
   margin-top: 5px;
-  color: #555;
+  color: #474646;
 }
 #aboutUs div p {
   margin-bottom: 10px;
@@ -189,4 +189,18 @@ nav a {
 #aboutUs .back a {
   text-decoration: none;
   color: #EE8A9B;
+}
+
+#news {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+#news h2 {
+  color: #EE8A9B;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#news hr {
+  width: 70%;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
