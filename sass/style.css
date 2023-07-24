@@ -128,12 +128,13 @@
 }
 .header-content-container .whatsapp {
   position: absolute;
+  z-index: -1;
   left: 10px;
   top: 24.5rem;
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   left: 0;
   right: 0;
@@ -141,7 +142,7 @@ nav {
   bottom: 0;
   width: 80%;
   height: 50px;
-  background-color: #FFC0CB;
+  background: linear-gradient(#EE8A9B, #FFC0CB, #EE8A9B);
   display: flex;
   justify-content: space-around;
   align-items: center;
