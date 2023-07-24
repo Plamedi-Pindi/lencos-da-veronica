@@ -1,0 +1,108 @@
+/**  GENERAL STYLE CONFIGURATION***/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-theme {
+  box-shadow: 1px 1px 10px #ece9e9;
+  width: 100%;
+}
+.logo-theme .logo-theme-content {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-theme #theme {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+}
+.logo-theme h2 {
+  color: #EE8A9B;
+}
+
+.header-content-container {
+  width: 100%;
+  height: 88vh;
+  position: relative;
+}
+.header-content-container .hdr-main-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-content-container .hdr-main-content .hdr-content {
+  width: 90%;
+  height: 28%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 3rem;
+}
+.header-content-container .hdr-main-content .hdr-content p {
+  color: #EE8A9B;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.header-content-container .hdr-main-content .hdr-content h1 {
+  color: #494747;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.header-content-container .hdr-main-content .hdr-content h1 span {
+  color: #EE8A9B;
+}
+.header-content-container .hdr-main-content .banner {
+  width: 70%;
+  height: 68%;
+  padding: 0;
+  background: linear-gradient(rgb(255, 192, 203), rgba(255, 192, 203, 0));
+  border-radius: 49% 49% 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.header-content-container .hdr-main-content .banner img {
+  width: 85%;
+  height: 96%;
+  margin-bottom: -2px;
+}
+.header-content-container .estyle1 {
+  position: absolute;
+  width: 68px;
+  height: 30px;
+  background-color: #FFC0CB;
+  right: 0;
+  top: 9rem;
+  border-radius: 20px 0 0 20px;
+}
+.header-content-container .style-item {
+  position: absolute;
+  width: 145px;
+  height: 6px;
+  background-color: #FFC0CB;
+  border-radius: 20px 20px 20px 20px;
+  left: -28px;
+  z-index: -1;
+}
+.header-content-container .estyle2 {
+  transform: rotate(130deg);
+  top: 12rem;
+}
+.header-content-container .estyle3 {
+  transform: rotate(130deg);
+  top: 14rem;
+}
+.header-content-container .estyle4 {
+  transform: rotate(130deg);
+  top: 16rem;
+}/*# sourceMappingURL=style.css.map */
