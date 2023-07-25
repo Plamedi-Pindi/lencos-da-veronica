@@ -205,4 +205,39 @@ nav a {
 #news hr {
   width: 70%;
   margin: 0 auto;
+}
+#news .news-container {
+  height: 310px;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding-left: 20px;
+}
+#news .news-container .card {
+  min-width: 210px;
+  height: 271px;
+  margin-right: 16px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 6px 10px #6b6565;
+  position: relative;
+}
+#news .news-container .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+#news .news-container .card span {
+  position: absolute;
+  background-color: white;
+  padding: 7px;
+  right: 0;
+  border-radius: 20px;
+  top: 3px;
+}
+#news .news-container .card:last-child {
+  margin-right: 0;
+}
+#news .news-container::-webkit-scrollbar {
+  width: 0;
 }/*# sourceMappingURL=style.css.map */
