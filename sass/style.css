@@ -207,7 +207,7 @@ nav a {
   margin: 0 auto;
 }
 #news .news-container {
-  height: 310px;
+  height: 340px;
   overflow-x: auto;
   display: flex;
   align-items: center;
@@ -215,12 +215,13 @@ nav a {
   padding-left: 20px;
 }
 #news .news-container .card {
-  min-width: 210px;
-  height: 271px;
+  min-width: 220px;
+  height: 300px;
   margin-right: 16px;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 3px 6px 10px #6b6565;
   position: relative;
+  margin-top: 10x;
 }
 #news .news-container .card img {
   width: 100%;
