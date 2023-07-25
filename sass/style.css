@@ -192,8 +192,10 @@ nav a {
 }
 
 #news {
-  margin-top: 2rem;
+  width: 100%;
+  margin-top: 3rem;
   margin-bottom: 5rem;
+  font-family: "Roboto", sans-serif;
 }
 #news h2 {
   color: #EE8A9B;
