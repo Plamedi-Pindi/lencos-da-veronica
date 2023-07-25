@@ -57,7 +57,7 @@
         overflow-x: auto;
         display: flex;
         align-items: center;
-        margin-top: 0.5rem;
+        margin-top: 0.4rem;
         padding-left: 20px;
         
         .card{
@@ -67,7 +67,6 @@
             border-radius: 10px 10px 10px 10px;
             box-shadow: 3px 6px 10px #6b6565;
             position: relative;
-            margin-top: 10x;
             
             img{
                 width: 100%;
@@ -95,22 +94,26 @@
     }
 
     .filter{
-        // background-color: $primary;
         padding: 10px;
         width: 65%;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-top: 0.5rem;
+        margin-top: 0.9rem;
         border-radius: 20px;
-        box-shadow: 1px 6px 10px #eceaea;
+        box-shadow: 1px 1px 10px #eceaea;
 
         button{
             background: none;
             border: none;
             font-size: 16px;
+            font-weight: 500;
         }
+        button:focus{
+            color: $subtitle;
+        }
+
     }
    
 }

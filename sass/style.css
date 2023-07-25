@@ -211,7 +211,7 @@ nav a {
   overflow-x: auto;
   display: flex;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   padding-left: 20px;
 }
 #news .news-container .card {
@@ -221,7 +221,6 @@ nav a {
   border-radius: 10px 10px 10px 10px;
   box-shadow: 3px 6px 10px #6b6565;
   position: relative;
-  margin-top: 10x;
 }
 #news .news-container .card img {
   width: 100%;
@@ -249,12 +248,16 @@ nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 0.9rem;
   border-radius: 20px;
-  box-shadow: 1px 6px 10px #eceaea;
+  box-shadow: 1px 1px 10px #eceaea;
 }
 #news .filter button {
   background: none;
   border: none;
   font-size: 16px;
+  font-weight: 500;
+}
+#news .filter button:focus {
+  color: #EE8A9B;
 }/*# sourceMappingURL=style.css.map */
