@@ -57,12 +57,30 @@
   font-family: "Roboto", sans-serif;
   margin-top: 3rem;
 }
+@keyframes greetings {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 .header-content-container .hdr-main-content .hdr-content p {
+  animation: greetings 2s ease-in-out;
   color: #EE8A9B;
   font-size: 18px;
   margin-bottom: 10px;
 }
+@keyframes presentation {
+  from {
+    font-size: 12px;
+  }
+  to {
+    font-size: 25px;
+  }
+}
 .header-content-container .hdr-main-content .hdr-content h1 {
+  animation: presentation 2s ease-in-out;
   color: #363636;
   font-size: 25px;
   margin-bottom: 10px;
@@ -86,7 +104,22 @@
   height: 96%;
   margin-bottom: -2px;
 }
+@keyframes estyle1 {
+  0% {
+    width: 68px;
+  }
+  50% {
+    width: 0;
+  }
+  75% {
+    width: 34px;
+  }
+  100% {
+    width: 68px;
+  }
+}
 .header-content-container .estyle1 {
+  animation: estyle1 2s ease-in-out 3s;
   position: absolute;
   width: 68px;
   height: 30px;
@@ -104,15 +137,55 @@
   left: -28px;
   z-index: -1;
 }
+@keyframes barra1 {
+  0% {
+    width: 80px;
+    top: 230px;
+  }
+  50% {
+    top: 10.5rem;
+    left: -38px;
+    width: 200px;
+  }
+  100% {
+    width: 145px;
+  }
+}
 .header-content-container .estyle2 {
+  animation: barra1 5s ease-in-out alternate infinite;
   transform: rotate(130deg);
   top: 12rem;
 }
+@keyframes barra2 {
+  0% {
+    width: 145px;
+  }
+  50% {
+    width: 240px;
+    top: 11.8rem;
+    left: -45px;
+  }
+  100% {
+    width: 80px;
+    top: 16.5rem;
+  }
+}
 .header-content-container .estyle3 {
+  animation: barra2 5s ease-in-out alternate infinite;
   transform: rotate(130deg);
   top: 14rem;
 }
+@keyframes barra3 {
+  from {
+    width: 100px;
+    top: 17.5rem;
+  }
+  to {
+    width: 145px;
+  }
+}
 .header-content-container .estyle4 {
+  animation: barra3 4s ease-in-out alternate infinite;
   transform: rotate(130deg);
   top: 16rem;
 }
@@ -158,6 +231,7 @@ nav {
 nav a {
   text-decoration: none;
   color: inherit;
+  transition: 0.4s;
 }
 
 #aboutUs {

@@ -54,12 +54,34 @@
             font-family: 'Roboto', sans-serif;
             margin-top: 3rem;
 
+            @keyframes greetings{
+                from{
+                    transform: translateY(10px);
+                }
+        
+                to{
+                    transform: translateY(0px);
+                }
+            }
             p{
+                animation: greetings 2s ease-in-out;
                 color: $subtitle;
                 font-size: 18px;
                 margin-bottom: 10px;
             }
+
+            @keyframes presentation{
+                from{
+                    font-size: 12px;
+                }
+
+                to{
+                    font-size: 25px;
+                }
+            }
+
             h1{
+                animation: presentation 2s ease-in-out;
                 color: #363636;
                 font-size: 25px;
                 margin-bottom: 10px;
@@ -88,8 +110,24 @@
             }
         }
     }
+    @keyframes estyle1{
+        0%{
+            width:68px;
+        }
+    
+        50%{
+            width: 0;
+        }
+        75%{
+            width: 34px;
+        }
 
+        100%{
+            width: 68px;
+        }
+    }
     .estyle1{
+        animation: estyle1 2s ease-in-out 3s;
         position: absolute;
         width: 68px;
         height: 30px;
@@ -108,16 +146,58 @@
         left: -28px;
         z-index: -1;;
     }
+
+   @keyframes barra1{
+        0%{
+            width: 80px;
+            top: 230px;
+        }
+        50%{
+            top: 10.5rem;
+            left: -38px;
+            width: 200px;
+        }
+        100%{
+            width: 145px;
+        }
+   }
     .estyle2{
-       transform: rotate(130deg);
-       top: 12rem;
-  
+        animation: barra1 5s ease-in-out alternate infinite;
+        transform: rotate(130deg);
+        top: 12rem;
+        
+    }
+    @keyframes barra2{
+        0%{
+            width: 145px;
+            
+        }
+        50%{
+            width: 240px;
+            top: 11.8rem;
+            left: -45px;
+        }
+        100%{
+            width: 80px;
+            top: 16.5rem;
+        }
     }
     .estyle3{
+        animation: barra2 5s ease-in-out alternate infinite;
        transform: rotate(130deg);
        top:14rem ;
     }
+    @keyframes barra3{
+        from{
+            width: 100px;
+            top: 17.5rem;
+        }
+        to{
+            width: 145px;
+        }
+    }
     .estyle4{
+        animation: barra3 4s ease-in-out alternate infinite;
        transform: rotate(130deg);
        top: 16rem;
     }
