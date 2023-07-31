@@ -9,6 +9,10 @@
   margin: 0 auto;
 }
 
+header {
+  width: 100%;
+}
+
 .logo-theme {
   box-shadow: 1px 1px 10px #ece9e9;
   width: 100%;
@@ -269,33 +273,35 @@ nav a {
 #news {
   width: 100%;
   margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   font-family: "Roboto", sans-serif;
 }
 #news h2 {
   color: #EE8A9B;
   text-align: center;
   padding-bottom: 10px;
+  font-weight: 500;
 }
 #news hr {
   width: 70%;
   margin: 0 auto;
 }
 #news .news-container {
+  width: 100%;
   height: 340px;
   overflow-x: auto;
   display: flex;
   align-items: center;
   margin-top: 0.4rem;
-  padding-left: 20px;
 }
 #news .news-container .card {
   min-width: 220px;
   height: 300px;
-  margin-right: 16px;
+  margin-left: 16px;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 3px 6px 10px #6b6565;
   position: relative;
+  transition: 1s;
 }
 #news .news-container .card img {
   width: 100%;
@@ -311,10 +317,10 @@ nav a {
   top: 3px;
 }
 #news .news-container .card:last-child {
-  margin-right: 0;
+  margin-right: 5px;
 }
 #news .news-container::-webkit-scrollbar {
-  width: 0;
+  display: none;
 }
 #news .filter {
   padding: 10px;
@@ -335,4 +341,148 @@ nav a {
 }
 #news .filter button:focus {
   color: #EE8A9B;
+}
+
+#lencoShow {
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: 1s;
+  font-family: "Roboto", sans-serif;
+}
+#lencoShow h2 {
+  color: #EE8A9B;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+#lencoShow hr {
+  width: 70%;
+  margin: 0 auto;
+}
+#lencoShow .lencos-container {
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  width: 100%;
+  height: 400px;
+}
+#lencoShow .lencos-container::-webkit-scrollbar {
+  display: none;
+}
+#lencoShow .lencos-card {
+  min-width: 250px;
+  height: 340px;
+  margin-left: 16px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 6px 10px #6b6565;
+}
+#lencoShow .lencos-card figure {
+  width: 100%;
+  height: 100%;
+}
+#lencoShow .lencos-card figure img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 65%;
+}
+#lencoShow .lencos-card figure figcaption {
+  padding: 0 10px;
+}
+#lencoShow .lencos-card figure figcaption h3 {
+  margin-bottom: 10px;
+}
+#lencoShow .lencos-card figure figcaption span {
+  color: green;
+}
+#lencoShow .lencos-card figure figcaption .social {
+  margin-top: 5px;
+}
+
+#abanoShow {
+  width: 100%;
+  margin-bottom: 5rem;
+  font-family: "Roboto", sans-serif;
+}
+#abanoShow h2 {
+  color: #EE8A9B;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+#abanoShow hr {
+  width: 70%;
+  margin: 0 auto;
+}
+#abanoShow .abano-container {
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  width: 100%;
+  height: 400px;
+}
+#abanoShow .abano-container::-webkit-scrollbar {
+  display: none;
+}
+#abanoShow .abano-card {
+  min-width: 250px;
+  height: 340px;
+  margin-left: 16px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 6px 10px #6b6565;
+}
+#abanoShow .abano-card figure {
+  width: 100%;
+  height: 100%;
+}
+#abanoShow .abano-card figure img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 65%;
+}
+#abanoShow .abano-card figure figcaption {
+  padding: 0 10px;
+}
+#abanoShow .abano-card figure figcaption h3 {
+  margin-bottom: 10px;
+}
+#abanoShow .abano-card figure figcaption span {
+  color: green;
+}
+#abanoShow .abano-card figure figcaption .social {
+  margin-top: 5px;
+}
+
+#perguntas {
+  margin-bottom: 5rem;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+}
+#perguntas .perg-container {
+  border: 1px solid #000;
+  border-radius: 8px;
+  height: auto;
+}
+#perguntas .perg-container input[type=radio] {
+  display: none;
+}
+#perguntas .perg-container label {
+  display: block;
+  border-bottom: 1px solid #000;
+  padding: 10px;
+  background-color: rgb(161, 52, 70);
+  color: #fff;
+}
+#perguntas .perg-container label:first-child {
+  border-radius: 5px 5px 0 0;
+  background-color: #000;
+}
+#perguntas .perg-container .perg-content {
+  border-bottom: 1px solid #EE8A9B;
+  padding: 10px;
+  display: none;
+}
+#perguntas .perg-container input:checked ~ .perg-content {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,23 @@
 @import './color';
+@mixin subtitulo($cor){
+    color: $cor; 
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+@mixin fonts(){
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin cards(){
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 6px 10px #6b6565;
+}
+@mixin horizontalLine(){
+    width: 70%;
+    margin: 0 auto;
+}
 
 
 #aboutUs{
@@ -40,12 +59,10 @@
 #news{
     width: 100%;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     font-family: 'Roboto', sans-serif;
     h2{
-       color: $subtitle; 
-       text-align: center;
-       padding-bottom: 10px;
+       @include subtitulo($subtitle);
     }
     hr{
         width: 70%;
@@ -53,20 +70,21 @@
     }
 
     .news-container{
+        width: 100%;
         height: 340px;
         overflow-x: auto;
         display: flex;
         align-items: center;
         margin-top: 0.4rem;
-        padding-left: 20px;
         
         .card{
             min-width: 220px;
             height: 300px;
-            margin-right: 16px;
+            margin-left: 16px;
             border-radius: 10px 10px 10px 10px;
             box-shadow: 3px 6px 10px #6b6565;
             position: relative;
+            transition: 1s;
             
             img{
                 width: 100%;
@@ -85,12 +103,13 @@
         }
 
         .card:last-child{
-            margin-right: 0;
+            margin-right: 5px;
         }
     }
 
     .news-container::-webkit-scrollbar{
-        width: 0;
+        // width: 0;
+        display: none;
     }
 
     .filter{
@@ -116,4 +135,190 @@
 
     }
    
+}
+
+#lencoShow{
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: 1s;
+    @include fonts();
+
+    h2{
+        @include subtitulo($subtitle)
+    }
+
+    hr{
+        @include horizontalLine();
+    }
+
+
+    .lencos-container{
+        margin-top: 0.4rem;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        width:100% ;
+        height: 400px;
+        // background-color: aqua;
+    }
+
+    .lencos-container::-webkit-scrollbar{
+        display: none;
+    }
+    .lencos-card{
+        min-width: 250px;
+        height: 340px;
+        margin-left: 16px;
+
+        @include cards();
+
+        figure{
+
+            width: 100%;
+            height: 100%;
+
+            img{
+                border-radius: 10px 10px 0 0;
+                width: 100%;
+                height: 65%;
+            }
+
+            figcaption{
+                padding: 0 10px;
+        
+                h3{
+                    margin-bottom: 10px;
+                }
+                
+                span{
+                    color: green;
+                }
+
+                .social{
+                    margin-top: 5px;
+                }
+               
+               
+            }
+
+        }
+    }
+
+    
+}
+
+#abanoShow{
+    width: 100%;
+    margin-bottom: 5rem;
+    @include fonts();
+
+    h2{
+        @include subtitulo($subtitle)
+    }
+
+    hr{
+        @include horizontalLine();
+    }
+
+
+    .abano-container{
+        margin-top: 0.4rem;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        width:100% ;
+        height: 400px;
+        // background-color: aqua;
+    }
+
+    .abano-container::-webkit-scrollbar{
+        display: none;
+    }
+    .abano-card{
+        min-width: 250px;
+        height: 340px;
+        margin-left: 16px;
+
+        @include cards();
+
+        figure{
+
+            width: 100%;
+            height: 100%;
+
+            img{
+                border-radius: 10px 10px 0 0;
+                width: 100%;
+                height: 65%;
+            }
+
+            figcaption{
+                padding: 0 10px;
+        
+                h3{
+                    margin-bottom: 10px;
+                }
+                
+                span{
+                    color: green;
+                }
+
+                .social{
+                    margin-top: 5px;
+                }
+               
+               
+            }
+
+        }
+    }
+
+    
+}
+
+#perguntas{
+    margin-bottom: 5rem;
+    height: auto;
+    @include fonts();
+
+    .perg-container{
+
+        border: 1px solid #000;
+        border-radius: 8px;
+        height: auto;
+
+        .pergunta{
+            // margin-bottom: 1rem;
+        }
+
+        input[type="radio"]{
+            display: none;
+        }
+
+        label{
+            display: block;
+            border-bottom: 1px solid #000;
+            padding: 10px;
+            background-color: rgb(161, 52, 70); 
+            color: #fff;
+        }
+
+        label:first-child{
+            border-radius: 5px 5px 0 0;
+            background-color: #000;
+        }
+
+        .perg-content{
+            border-bottom: 1px solid $subtitle;
+            padding: 10px;
+            display: none;
+
+        }
+
+        input:checked ~ .perg-content{
+            display: block;
+        }
+
+
+    }
 }
