@@ -282,10 +282,10 @@
     height: auto;
     @include fonts();
 
-    h2{
-        @include subtitulo();
+    // h2{
+    //     // @include subtitulo();
         
-    }
+    // }
 
     
 
@@ -340,3 +340,4 @@
     }
     
 }
+

@@ -13,6 +13,24 @@
     margin: 0 auto;
 }
 
+body{
+    position: relative;
+}
+
+// ###############3333 PRELOADER ####################
+
+#preloader{
+    background: #fff url(../img/preloader/preloader2.gif) no-repeat;
+    background-position: center;
+    background-position-y: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 100; 
+}
+
+
 @import './header';
 @import './navBar';
 @import './main';

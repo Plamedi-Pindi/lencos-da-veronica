@@ -9,6 +9,21 @@
   margin: 0 auto;
 }
 
+body {
+  position: relative;
+}
+
+#preloader {
+  background: #fff url(../img/preloader/preloader2.gif) no-repeat;
+  background-position: center;
+  background-position-y: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
 header {
   width: 100%;
 }
@@ -345,7 +360,7 @@ nav a {
 
 #lencoShow {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   transition: 1s;
   font-family: "Roboto", sans-serif;
 }
@@ -375,7 +390,7 @@ nav a {
   height: 340px;
   margin-left: 16px;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 3px 6px 10px #6b6565;
+  box-shadow: 1px 6px 10px #6b6565;
 }
 #lencoShow .lencos-card figure {
   width: 100%;
@@ -401,7 +416,7 @@ nav a {
 
 #abanoShow {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-family: "Roboto", sans-serif;
 }
 #abanoShow h2 {
@@ -430,7 +445,7 @@ nav a {
   height: 340px;
   margin-left: 16px;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 3px 6px 10px #6b6565;
+  box-shadow: 1px 6px 10px #6b6565;
 }
 #abanoShow .abano-card figure {
   width: 100%;

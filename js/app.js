@@ -109,6 +109,15 @@ btn_abanos.addEventListener('click',()=>{
         newsContainer.style.height = '340px'
     }, 900)
 
+ })
 
+
+ const preloader = document.querySelector('#preloader')
+
+ window.addEventListener('load', ()=>{
+
+    setTimeout(()=>{
+        preloader.style.display ='none'
+    }, 2000)
 
  })
