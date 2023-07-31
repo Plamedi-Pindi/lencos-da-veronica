@@ -287,9 +287,9 @@
         border-radius: 8px;
         height: auto;
 
-        .pergunta{
-            // margin-bottom: 1rem;
-        }
+        // .pergunta{
+        //     // margin-bottom: 1rem;
+        // }
 
         input[type="radio"]{
             display: none;
@@ -303,9 +303,14 @@
             color: #fff;
         }
 
-        label:first-child{
+        .pergunta:first-child label{
             border-radius: 5px 5px 0 0;
-            background-color: #000;
+            // background-color: #000;
+        }
+
+        .pergunta:last-child label{
+            border-radius: 0 0 5px 5px;
+            // background-color: #000;
         }
 
         .perg-content{

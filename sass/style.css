@@ -474,9 +474,11 @@ nav a {
   background-color: rgb(161, 52, 70);
   color: #fff;
 }
-#perguntas .perg-container label:first-child {
+#perguntas .perg-container .pergunta:first-child label {
   border-radius: 5px 5px 0 0;
-  background-color: #000;
+}
+#perguntas .perg-container .pergunta:last-child label {
+  border-radius: 0 0 5px 5px;
 }
 #perguntas .perg-container .perg-content {
   border-bottom: 1px solid #EE8A9B;
