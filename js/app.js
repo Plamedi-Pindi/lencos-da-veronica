@@ -72,7 +72,7 @@ btn_abanos.addEventListener('click',()=>{
     
     for(let i=0; i< card.length; i++){
         card[i].style.minHeight = ' 360px'
-        card[i].style.minWidth = ' 300px'
+        card[i].style.minWidth = ' 280px'
         card[i].style.marginTop = ' 1rem'
         card[i].style.transition = ' 1s ease-in-out'
     }
