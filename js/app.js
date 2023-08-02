@@ -121,3 +121,16 @@ btn_abanos.addEventListener('click',()=>{
     }, 2000)
 
  })
+
+
+//  ##############3 THEME ###################
+
+const theme = document.getElementById('theme')
+
+theme.addEventListener('click', ()=>{
+    const body = document.getElementsByTagName('body')[0]
+    const headerH1 = document.querySelector('.hdr-content h1')
+
+    body.style.background = 'linear-gradient(60deg, #31002b, #240120)'
+    headerH1.style.color ='#fff'
+})
