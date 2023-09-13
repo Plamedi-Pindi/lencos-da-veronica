@@ -13,7 +13,7 @@ body {
   position: relative;
 }
 
-#preloader {
+.preloader {
   background: #fff url(../img/preloader/preloader2.gif) no-repeat;
   background-position: center;
   background-position-y: center;

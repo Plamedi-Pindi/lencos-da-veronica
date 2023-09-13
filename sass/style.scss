@@ -21,7 +21,7 @@ body{
 
 // ###############3333 PRELOADER ####################
 
-#preloader{
+.preloader{
     background: #fff url(../img/preloader/preloader2.gif) no-repeat;
     background-position: center;
     background-position-y: center;
@@ -30,6 +30,8 @@ body{
     position: fixed;
     top:0;
     z-index: 100; 
+
+    
 }
 
 
