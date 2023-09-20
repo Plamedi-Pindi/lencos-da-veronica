@@ -1,4 +1,5 @@
 @import './color';
+
 @mixin subtitulo($cor){
     color: $cor; 
     text-align: center;
@@ -58,9 +59,10 @@
 
 #news{
     width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif;
+
     h2{
        @include subtitulo($subtitle);
     }
@@ -140,7 +142,7 @@
 
 #lencoShow{
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     transition: 1s;
     @include fonts();
 
@@ -210,7 +212,7 @@
 
 #abanoShow{
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     @include fonts();
 
     h2{
@@ -279,26 +281,25 @@
 
 #perguntas{
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     height: auto;
     @include fonts();
 
-    // h2{
-    //     // @include subtitulo();
+    h2{
+        @include subtitulo($subtitle);
         
-    // }
+    }
 
-    
-
-    // hr{
-    //     @include horizontalLine();
-    // }
+    hr{
+        @include horizontalLine();
+    }
     
     .perg-container{
 
         border: 1px solid #000;
         border-radius: 8px;
         height: auto;
+        margin-top: 2rem;
 
         // .pergunta{
         //     // margin-bottom: 1rem;

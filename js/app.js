@@ -40,7 +40,7 @@ btn_todos.addEventListener('click', () => {
                 card[i].style.transform = "scale(1)";
             }
 
-        }, 200);
+        }, 750);
 
     }
 })
@@ -59,7 +59,7 @@ btn_lencos.addEventListener('click', () => {
             lenco[i].style.opacity = 1;
             lenco[i].style.transform = "scale(1)";
 
-        }, 600);
+        }, 750);
 
     }
 
@@ -86,7 +86,7 @@ btn_abanos.addEventListener('click', () => {
         setTimeout(() => {
             abano[i].style.opacity = 1;
             abano[i].style.transform = "scale(1)";
-        }, 600);
+        }, 750);
     }
 
     for (let i = 0; i < lenco.length; i++) {
@@ -146,7 +146,7 @@ horizontalShow.addEventListener('click', () => {
 
     setTimeout(() => {
         newsContainer.style.height = '340px'
-    }, 900)
+    }, 750)
 
 })
 

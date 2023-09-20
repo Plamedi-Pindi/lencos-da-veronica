@@ -40,3 +40,68 @@ body{
 @import './main';
 
 
+
+@media(min-width:630px){
+    #news,
+    #lencoShow,
+    #abanoShow{
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+
+    #news{
+        h2{
+            margin-top: 4rem;
+         }
+    }
+    #lencoShow{
+        h2{
+            margin-top: 2rem;
+         }
+    }
+    #abanoShow{
+        h2{
+            margin-top: 2rem;
+         }
+    }
+    
+    #perguntas{
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+
+        h2{
+            margin-top: 2rem;
+         }
+        
+    }
+
+    .header-content-container{
+       height: 520px;
+    }    
+   
+}
+
+@media(min-width:760px){
+
+
+    .header-content-container{
+
+        .hdr-main-content{
+            width: 90%;
+            
+            display: flex;
+            flex-direction: row;
+
+        }
+
+    }
+
+    .facebook{
+        display: none;
+    }
+    
+}
+
+
