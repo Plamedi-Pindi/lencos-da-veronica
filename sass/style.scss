@@ -38,7 +38,12 @@ body{
 @import './header';
 @import './navBar';
 @import './main';
+@import './lightbox';
+@import './color';
 
+@mixin fonts(){
+    font-family: 'Roboto', sans-serif;
+}
 
 
 @media(min-width:630px){
@@ -104,4 +109,59 @@ body{
     
 }
 
+@media(min-width:920px){
+    nav{
+        display: none;
+    }
+    #desktop-nav{
+        width: 30%;
+        height: 100%;
+    }
+    #desktop-nav ul {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #desktop-nav ul li{
+      list-style: none;
+    }
+    #desktop-nav ul li a{
+      text-decoration: none;
+      color: #333;
+      font-weight: 400;
+      transition: ease .5s;
+      @include fonts();
+    }
+    #desktop-nav ul li a:hover{
+      text-decoration: none;
+      color: $subtitle;
+    }
+
+    .header-content-container{
+        
+        .hdr-main-content{
+            // background-color: aqua;
+            padding: 0;
+            // align-items: flex-start ;
+            
+            .hdr-content{
+                // margin-top: -10px;
+                // background-color: blueviolet;
+                // height: 80%;
+                margin-top: 40px;
+                margin-bottom: 40px;
+
+                // h2{
+
+                // }
+            }
+
+            .banner{
+                height: 85%;
+            }
+        }
+    }
+
+}
 

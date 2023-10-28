@@ -28,6 +28,10 @@ header {
   width: 100%;
 }
 
+#desktop-nav {
+  display: none;
+}
+
 .logo-theme {
   box-shadow: 1px 1px 10px #ece9e9;
   width: 100%;
@@ -99,13 +103,13 @@ header {
     font-size: 25px;
   }
 }
-.header-content-container .hdr-main-content .hdr-content h1 {
+.header-content-container .hdr-main-content .hdr-content h2 {
   animation: presentation 2s ease-in-out;
   color: #363636;
   font-size: 25px;
   margin-bottom: 10px;
 }
-.header-content-container .hdr-main-content .hdr-content h1 span {
+.header-content-container .hdr-main-content .hdr-content h2 span {
   color: #EE8A9B;
 }
 .header-content-container .hdr-main-content .banner {
@@ -528,6 +532,45 @@ nav a {
   display: block;
 }
 
+.lightbox {
+  display: table;
+  opacity: 0;
+  transition: ease-in 0.5s;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -100;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+}
+
+.lightbox img {
+  max-width: 100%;
+  height: auto;
+}
+
+.lightbox-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.lightbox:target {
+  opacity: 1;
+  z-index: 100;
+}
+
 @media (min-width: 630px) {
   #news,
   #lencoShow,
@@ -564,5 +607,44 @@ nav a {
   }
   .facebook {
     display: none;
+  }
+}
+@media (min-width: 920px) {
+  nav {
+    display: none;
+  }
+  #desktop-nav {
+    width: 30%;
+    height: 100%;
+  }
+  #desktop-nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #desktop-nav ul li {
+    list-style: none;
+  }
+  #desktop-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    transition: ease 0.5s;
+    font-family: "Roboto", sans-serif;
+  }
+  #desktop-nav ul li a:hover {
+    text-decoration: none;
+    color: #EE8A9B;
+  }
+  .header-content-container .hdr-main-content {
+    padding: 0;
+  }
+  .header-content-container .hdr-main-content .hdr-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .header-content-container .hdr-main-content .banner {
+    height: 85%;
   }
 }/*# sourceMappingURL=style.css.map */
