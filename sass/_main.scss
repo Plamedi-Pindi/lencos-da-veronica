@@ -176,6 +176,10 @@
     transition: 1s;
     @include fonts();
 
+    .lencoShow{
+        background-color: #eee;
+        z-index: 1;
+    }
     h2{
         @include subtitulo($subtitle)
     }
@@ -184,25 +188,28 @@
         @include horizontalLine();
 
     }
-
+   
 
     .lencos-container{
         margin-top: 0.4rem;
         display: flex;
         align-items: center;
-        overflow-x: auto;
-        width:100% ;
         height: 400px;
-        // background-color: aqua;
     }
 
-    .lencos-container::-webkit-scrollbar{
-        display: none;
+    // .lencos-container::-webkit-scrollbar{
+    //     display: none;
+    // }
+    .swiper{
+        width: 100%;
+    }
+    .swiper-slide{
+        min-width: 210px !important;
+        height: 290px !important;
     }
     .lencos-card{
-        min-width: 210px;
-        height: 290px;
-        margin-left: 16px;
+        min-width: 210px !important;
+        height: 290px !important;
 
         @include cards();
 
@@ -261,7 +268,7 @@
     }
 
     .abanoShow{
-        // background-color: #eee;
+        background-color: #eee;
         z-index: 1;
     }
 
@@ -279,12 +286,10 @@
     //     display: none;
     // }
     .swiper{
-        width: 90%;
+        width: 100%;
 
     }
-    .swiper-slide{
-        // width: % !important;
-    }
+
     .abano-card{
         width: 210px  !important;
         height: 290px !important;

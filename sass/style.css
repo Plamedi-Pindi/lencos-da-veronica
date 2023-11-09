@@ -407,6 +407,10 @@ nav a {
   transition: 1s;
   font-family: "Roboto", sans-serif;
 }
+#lencoShow .lencoShow {
+  background-color: #eee;
+  z-index: 1;
+}
 #lencoShow h2 {
   color: #EE8A9B;
   text-align: center;
@@ -421,17 +425,18 @@ nav a {
   margin-top: 0.4rem;
   display: flex;
   align-items: center;
-  overflow-x: auto;
-  width: 100%;
   height: 400px;
 }
-#lencoShow .lencos-container::-webkit-scrollbar {
-  display: none;
+#lencoShow .swiper {
+  width: 100%;
+}
+#lencoShow .swiper-slide {
+  min-width: 210px !important;
+  height: 290px !important;
 }
 #lencoShow .lencos-card {
-  min-width: 210px;
-  height: 290px;
-  margin-left: 16px;
+  min-width: 210px !important;
+  height: 290px !important;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 1px 6px 10px #6b6565;
 }
@@ -477,6 +482,7 @@ nav a {
   margin: 0 auto;
 }
 #abanoShow .abanoShow {
+  background-color: #eee;
   z-index: 1;
 }
 #abanoShow .abano-container {
@@ -486,7 +492,7 @@ nav a {
   height: 400px;
 }
 #abanoShow .swiper {
-  width: 90%;
+  width: 100%;
 }
 #abanoShow .abano-card {
   width: 210px !important;
@@ -656,6 +662,9 @@ nav a {
     width: 30%;
     height: 100%;
   }
+  .logo-theme-content {
+    width: 85%;
+  }
   #desktop-nav ul {
     height: 100%;
     display: flex;
@@ -685,5 +694,8 @@ nav a {
   }
   .header-content-container .hdr-main-content .banner {
     height: 85%;
+  }
+  .swiper {
+    width: 85% !important;
   }
 }/*# sourceMappingURL=style.css.map */

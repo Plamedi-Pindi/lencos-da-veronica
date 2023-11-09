@@ -279,10 +279,10 @@ setInterval(() => {
 }, 6000)
 
 
-/**################# SWIPER SLIDE ######################**/
+/**################# SWIPER SLIDE LENCOS ######################**/
 var swiper = new Swiper(".abanoShow", {  
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20,
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -295,20 +295,44 @@ var swiper = new Swiper(".abanoShow", {
     breakpoints: {
         320: {
             slidesPerView: 2,
-            // spaceBetween: 20,
         },
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+        495: {
+            slidesPerView: 3,
         },
-        768: {
+        750: {
             slidesPerView: 4,
-            spaceBetween: 40,
         },
-        1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+    
+    },
+});
+
+
+/**################# SWIPER SLIDE LENCOS ######################**/
+var swiper = new Swiper(".lencoShow", {  
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
         },
+        495: {
+            slidesPerView: 3,
+        },
+        750: {
+            slidesPerView: 4,
+        },
+      
+    
     },
 });
 
