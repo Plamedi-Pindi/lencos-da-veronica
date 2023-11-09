@@ -92,13 +92,17 @@ body{
 
 
     .header-content-container{
-
+        height: 500px;
+        background: #f0e7e8;
         .hdr-main-content{
             width: 90%;
             
             display: flex;
             flex-direction: row;
+        }
 
+        .style-item{
+            z-index: 1;
         }
 
     }

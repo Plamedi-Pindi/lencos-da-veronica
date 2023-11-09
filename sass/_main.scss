@@ -20,6 +20,22 @@
     margin: 0 auto;
 }
 
+// ESTILO GERAL DE PARAGRAFOS INTRODUTORAS DE SECOES
+.paragraph{
+    font-size: 16px;
+    color: #888;
+    border-left: 4px solid $subtitle;
+    margin-left: 1rem;
+    padding: 10px;
+    margin-top: 1rem;
+}
+// ESTILO GERAL PARA OWNER DOS PRODUTOS
+.owner{
+    font-size: 14PX;
+    color: #888 !important;
+    margin-bottom: 10px;
+}
+
 // SPAN FOR PRODUCT ID
 .pid{
     position: absolute;
@@ -80,6 +96,7 @@
         width: 70%;
         margin: 0 auto;
     }
+   
 
     .news-container{
         width: 100%;
@@ -135,6 +152,7 @@
         margin-top: 0.9rem;
         border-radius: 20px;
         box-shadow: 1px 1px 10px #eceaea;
+        
 
         button{
             background: none;
@@ -150,6 +168,8 @@
    
 }
 
+/** LENSO SHOW **/ 
+
 #lencoShow{
     width: 100%;
     margin-bottom: 2rem;
@@ -162,6 +182,7 @@
 
     hr{
         @include horizontalLine();
+
     }
 
 
@@ -179,8 +200,8 @@
         display: none;
     }
     .lencos-card{
-        min-width: 225px;
-        height: 340px;
+        min-width: 210px;
+        height: 290px;
         margin-left: 16px;
 
         @include cards();
@@ -194,17 +215,19 @@
             img{
                 border-radius: 10px 10px 0 0;
                 width: 100%;
-                height: 65%;
+                height: 50%;
             }
 
             figcaption{
                 padding: 0 10px;
         
                 h3{
-                    margin-bottom: 10px;
+                    margin-bottom: 6px;
+                    margin-top: 10px ;
                 }
                 
                 span{
+                    margin-top: 10px;
                     color: green;
                 }
 
@@ -221,9 +244,12 @@
     
 }
 
+/** ABNOS SHOW **/ 
+
 #abanoShow{
     width: 100%;
     margin-bottom: 2rem;
+
     @include fonts();
 
     h2{
@@ -234,37 +260,49 @@
         @include horizontalLine();
     }
 
+    .abanoShow{
+        // background-color: #eee;
+        z-index: 1;
+    }
 
     .abano-container{
         margin-top: 0.4rem;
         display: flex;
         align-items: center;
-        overflow-x: auto;
-        width:100% ;
+        // overflow-x: auto;
+        // width:100% ;
         height: 400px;
-        // background-color: aqua;
+        // z-index: -2;
     }
 
-    .abano-container::-webkit-scrollbar{
-        display: none;
+    // .abano-container::-webkit-scrollbar{
+    //     display: none;
+    // }
+    .swiper{
+        width: 90%;
+
+    }
+    .swiper-slide{
+        // width: % !important;
     }
     .abano-card{
-        min-width: 225px;
-        height: 340px;
-        margin-left: 16px;
+        width: 210px  !important;
+        height: 290px !important;
+        // margin-left: 16px;
+        // background-color: #000;
 
         @include cards();
 
         figure{
 
-            width: 100%;
+            width: 100% !important;
             height: 100%;
             position: relative;
 
             img{
                 border-radius: 10px 10px 0 0;
                 width: 100%;
-                height: 65%;
+                height: 50%;
             }
 
             figcaption{

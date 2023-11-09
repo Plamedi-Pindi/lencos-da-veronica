@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="img/icon.png">
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,11 @@
     <!-- APP CSS -->
     <link rel="stylesheet" href="sass/style.css">
 
-    <title>Home</title>
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <title>Quicadila</title>
 </head>
 
 <body>
@@ -24,7 +30,8 @@
         <section class="logo-theme ">
             <div class="logo-theme-content  container">
                 <a href="index.html">
-                    <h2 class="logo">logo</h2>
+                    <img src="img/logo.png" alt="">
+                    <h1 class="logo">uicadila</h1>
                 </a>
                 <section id="desktop-nav">
                     <ul>
@@ -55,13 +62,14 @@
                     <p>Ola, seja bem-vindo!</p>
                     <h2>Aqui você encontra as melhores <br> <span>soluções</span> <br> para a sua beleza</h2>
                     <div class="media">
-                        
+
                     </div>
                 </div>
 
                 <!-- BANNER -->
                 <div class="banner">
-                    <img src="img/banner/banner.png" alt="">
+                    <img id="banne_img1" src="img/banner/banner.png" alt="">
+                    <img id="banne_img2" src="img/banner/banner1.png" alt="">
                 </div>
 
             </div>
@@ -115,7 +123,7 @@
 
         <!-- NAVBAR -->
         <nav class="container">
-            
+
             <a href="index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                     class="bi bi-house-fill" viewBox="0 0 16 16">
@@ -161,25 +169,33 @@
         <section id="news">
             <h2>Produtos em destaque</h2>
             <hr>
+            <p class="paragraph">Selecionamos pra você a coleção de alguns produtos e imagens de serviços mais recentes.
+            </p>
             <div class="filter">
                 <button id="todos">Todos</button>
                 <button id="lencos">Lenços</button>
                 <button id="abanos">Abanos</button>
                 <button id="horizontal-display">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
-                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-                        <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-card-heading" viewBox="0 0 16 16">
+                        <path
+                            d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                        <path
+                            d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z" />
+                    </svg>
                 </button>
                 <button id="vertical-display">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-list-ul" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
                 </button>
             </div>
+
             <div class="news-container ">
                 <div class="card abano">
-                    <img src="./img/news/1.jpg" alt="imagem de produto em destaque">
+                    <img src="./img/news/7.jpg" alt="imagem de produto em destaque">
                     <span>Novidade</span>
                 </div>
                 <div class="card lenco">
@@ -202,6 +218,10 @@
                     <img src="./img/news/6.jpeg" alt="imagem de produto em destaque">
                     <span>Novidade</span>
                 </div>
+                <div class="card abano">
+                    <img src="./img/news/8.jpg" alt="imagem de produto em destaque">
+                    <span>Novidade</span>
+                </div>
 
             </div>
         </section>
@@ -210,6 +230,7 @@
         <section id="lencoShow">
             <h2>Nossos modelos de lenços</h2>
             <hr>
+            <p class="paragraph">Aqui estão alguns lenços e os seus codigos de identificação.</p>
             <div class="lencos-container">
                 <div class="lencos-card">
                     <figure>
@@ -218,18 +239,20 @@
                         <a href="#lenco1"><img src="./img/lencos/l17.png" alt="Imagem de lencos"></a>
                         <figcaption>
                             <h3>Leck</h3>
+                            <p class="owner">por Verónica Dorcas</p>
                             <span>10.000,00kz</span>
                             <div class="social">
                                 <a href="" class="midia facebook">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
                                         <path
                                             d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
                                             fill="white" />
                                         <defs>
-                                            <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917"
-                                                gradientUnits="userSpaceOnUse">
+                                            <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                y2="29.917" gradientUnits="userSpaceOnUse">
                                                 <stop stop-color="#18ACFE" />
                                                 <stop offset="1" stop-color="#0163E0" />
                                             </linearGradient>
@@ -238,7 +261,8 @@
                                 </a>
                                 <a href="#" class="midia whatsapp">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
                                             fill="#BFC8D0" />
@@ -268,21 +292,23 @@
                     <figure>
                         <span class="pid">L2</span>
                         <a href="#lenco2"><img src="./img/lencos/l1.jpg" alt="Imagem de lencos"></a>
-                        
+
                         <figcaption>
                             <h3>Djuma</h3>
+                            <p class="owner">por Verónica Dorcas</p>
                             <span>10.000,00kz</span>
                             <div class="social">
                                 <a href="" class="midia facebook">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
                                         <path
                                             d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
                                             fill="white" />
                                         <defs>
-                                            <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917"
-                                                gradientUnits="userSpaceOnUse">
+                                            <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                y2="29.917" gradientUnits="userSpaceOnUse">
                                                 <stop stop-color="#18ACFE" />
                                                 <stop offset="1" stop-color="#0163E0" />
                                             </linearGradient>
@@ -291,7 +317,8 @@
                                 </a>
                                 <a href="#" class="midia whatsapp">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
                                             fill="#BFC8D0" />
@@ -323,18 +350,20 @@
                         <a href="#lenco3"><img src="./img/lencos/l3.jpg" alt="Imagem de lencos"></a>
                         <figcaption>
                             <h3>Leck com flor</h3>
+                            <p class="owner">por Verónica Dorcas</p>
                             <span>15.000,00kz</span>
                             <div class="social">
                                 <a href="" class="midia facebook">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
                                         <path
                                             d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
                                             fill="white" />
                                         <defs>
-                                            <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917"
-                                                gradientUnits="userSpaceOnUse">
+                                            <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                y2="29.917" gradientUnits="userSpaceOnUse">
                                                 <stop stop-color="#18ACFE" />
                                                 <stop offset="1" stop-color="#0163E0" />
                                             </linearGradient>
@@ -343,7 +372,8 @@
                                 </a>
                                 <a href="#" class="midia whatsapp">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
                                             fill="#BFC8D0" />
@@ -375,18 +405,20 @@
                         <a href="#lenco4"><img src="./img/lencos/l33.jpg" alt="Imagem de lencos"></a>
                         <figcaption>
                             <h3>Leck</h3>
+                            <p class="owner">por Verónica Dorcas</p>
                             <span>10.000,00kz</spa>
                                 <div class="social">
                                     <a href="" class="midia facebook">
                                         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
                                             <path
                                                 d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
                                                 fill="white" />
                                             <defs>
-                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917"
-                                                    gradientUnits="userSpaceOnUse">
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
                                                     <stop stop-color="#18ACFE" />
                                                     <stop offset="1" stop-color="#0163E0" />
                                                 </linearGradient>
@@ -395,7 +427,8 @@
                                     </a>
                                     <a href="#" class="midia whatsapp">
                                         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
                                                 fill="#BFC8D0" />
@@ -409,8 +442,8 @@
                                                 d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
                                                 fill="white" />
                                             <defs>
-                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
-                                                    gradientUnits="userSpaceOnUse">
+                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4"
+                                                    y2="28" gradientUnits="userSpaceOnUse">
                                                     <stop stop-color="#5BD066" />
                                                     <stop offset="1" stop-color="#27B43E" />
                                                 </linearGradient>
@@ -427,18 +460,20 @@
                         <a href="#lenco5"><img src="./img/lencos/l30.jpg" alt="Imagem de lencos"></a>
                         <figcaption>
                             <h3>Leck</h3>
+                            <p class="owner">por Verónica Dorcas</p>
                             <span>10.000,00kz</spa>
                                 <div class="social">
                                     <a href="" class="midia facebook">
                                         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
                                             <path
                                                 d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
                                                 fill="white" />
                                             <defs>
-                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917"
-                                                    gradientUnits="userSpaceOnUse">
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
                                                     <stop stop-color="#18ACFE" />
                                                     <stop offset="1" stop-color="#0163E0" />
                                                 </linearGradient>
@@ -447,7 +482,8 @@
                                     </a>
                                     <a href="#" class="midia whatsapp">
                                         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
                                                 fill="#BFC8D0" />
@@ -461,8 +497,8 @@
                                                 d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
                                                 fill="white" />
                                             <defs>
-                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
-                                                    gradientUnits="userSpaceOnUse">
+                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4"
+                                                    y2="28" gradientUnits="userSpaceOnUse">
                                                     <stop stop-color="#5BD066" />
                                                     <stop offset="1" stop-color="#27B43E" />
                                                 </linearGradient>
@@ -478,19 +514,21 @@
                         <span class="pid">L4</span>
                         <a href="#lenco6"><img src="./img/lencos/l19.jpg" alt="Imagem de lencos"></a>
                         <figcaption>
-                            <h3>Nome do lenco</h3>
+                            <h3>Leck</h3>
+                            <p class="owner">por Verónica Dorcas</p>
                             <span>10.000,00kz</spa>
                                 <div class="social">
                                     <a href="" class="midia facebook">
                                         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
                                             <path
                                                 d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
                                                 fill="white" />
                                             <defs>
-                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917"
-                                                    gradientUnits="userSpaceOnUse">
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
                                                     <stop stop-color="#18ACFE" />
                                                     <stop offset="1" stop-color="#0163E0" />
                                                 </linearGradient>
@@ -499,7 +537,8 @@
                                     </a>
                                     <a href="#" class="midia whatsapp">
                                         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
                                                 fill="#BFC8D0" />
@@ -513,8 +552,8 @@
                                                 d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
                                                 fill="white" />
                                             <defs>
-                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
-                                                    gradientUnits="userSpaceOnUse">
+                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4"
+                                                    y2="28" gradientUnits="userSpaceOnUse">
                                                     <stop stop-color="#5BD066" />
                                                     <stop offset="1" stop-color="#27B43E" />
                                                 </linearGradient>
@@ -530,19 +569,21 @@
                         <span class="pid">L4</span>
                         <a href="#lenco7"><img src="./img/lencos/l41.jpg" alt="Imagem de lencos"></a>
                         <figcaption>
-                            <h3>Nome do lenco</h3>
+                            <h3>Leck</h3>
+                            <p class="owner">por Verónica Dorcas</p>
                             <span>10.000,00kz</spa>
                                 <div class="social">
                                     <a href="" class="midia facebook">
                                         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
                                             <path
                                                 d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
                                                 fill="white" />
                                             <defs>
-                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917"
-                                                    gradientUnits="userSpaceOnUse">
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
                                                     <stop stop-color="#18ACFE" />
                                                     <stop offset="1" stop-color="#0163E0" />
                                                 </linearGradient>
@@ -551,7 +592,73 @@
                                     </a>
                                     <a href="#" class="midia whatsapp">
                                         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                                fill="#BFC8D0" />
+                                            <path
+                                                d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                                fill="url(#paint0_linear_87_7264)" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                                fill="white" />
+                                            <path
+                                                d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4"
+                                                    y2="28" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#5BD066" />
+                                                    <stop offset="1" stop-color="#27B43E" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ############# EXIBICAO DE ABANOS ################# -->
+        <section id="abanoShow" >
+            <h2>Nossos Modelos de abanos</h2>
+            <hr>
+            <p class="paragraph">Aqui estão alguns abanos e os seus codigos de identificação.</p>
+            <div class="swiper abanoShow">
+                <div class="abano-container swiper-wrapper">
+                    <div class="abano-card swiper-slide">
+                        <figure>
+                            <span class="pid">A1</span>
+                            <a href="#abano1"><img src="./img/abanos/a1.jpg" alt="Imagem de lencos"></a>
+                            <figcaption>
+                                <h3>Nome do lenco</h3>
+                                <p class="owner">por Verónica Dorcas</p>
+                                <span>10.000,00kz</span>
+                                <div class="social">
+                                    <a href="" class="midia facebook">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
+                                            <path
+                                                d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#18ACFE" />
+                                                    <stop offset="1" stop-color="#0163E0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="midia whatsapp">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
                                                 fill="#BFC8D0" />
@@ -574,122 +681,293 @@
                                         </svg>
                                     </a>
                                 </div>
-                        </figcaption>
-                    </figure>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="abano-card swiper-slide">
+                        <figure>
+                            <span class="pid">A2</span>
+                            <a href="#abano2"><img src="../img/abanos/a2.jpg" alt="Imagem de lencos"></a>
+    
+                            <figcaption>
+                                <h3>Nome do Abano</h3>
+                                <p class="owner">por Verónica Dorcas</p>
+                                <span>10.000,00kz</span>
+                                <div class="social">
+                                    <a href="" class="midia facebook">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
+                                            <path
+                                                d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#18ACFE" />
+                                                    <stop offset="1" stop-color="#0163E0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="midia whatsapp">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                                fill="#BFC8D0" />
+                                            <path
+                                                d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                                fill="url(#paint0_linear_87_7264)" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                                fill="white" />
+                                            <path
+                                                d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#5BD066" />
+                                                    <stop offset="1" stop-color="#27B43E" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="abano-card swiper-slide">
+                        <figure>
+                            <span class="pid">A3</span>
+                            <a href="#abano3"><img src="./img/abanos/a3.jpg" alt="Imagem de lencos"></a>
+    
+                            <figcaption>
+                                <h3>Nome do Abano</h3>
+                                <p class="owner">por Verónica Dorcas</p>
+                                <span>10.000,00kz</span>
+                                <div class="social">
+                                    <a href="" class="midia facebook">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
+                                            <path
+                                                d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#18ACFE" />
+                                                    <stop offset="1" stop-color="#0163E0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="midia whatsapp">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                                fill="#BFC8D0" />
+                                            <path
+                                                d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                                fill="url(#paint0_linear_87_7264)" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                                fill="white" />
+                                            <path
+                                                d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#5BD066" />
+                                                    <stop offset="1" stop-color="#27B43E" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="abano-card swiper-slide">
+                        <figure>
+                            <span class="pid">A4</span>
+                            <a href="#abano4"><img src="./img/abanos/a4.jpg" alt="Imagem de lencos"></a>
+    
+                            <figcaption>
+                                <h3>Nome do Abano</h3>
+                                <p class="owner">por Verónica Dorcas</p>
+                                <span>10.000,00kz</span>
+                                <div class="social">
+                                    <a href="" class="midia facebook">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
+                                            <path
+                                                d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#18ACFE" />
+                                                    <stop offset="1" stop-color="#0163E0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="midia whatsapp">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                                fill="#BFC8D0" />
+                                            <path
+                                                d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                                fill="url(#paint0_linear_87_7264)" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                                fill="white" />
+                                            <path
+                                                d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#5BD066" />
+                                                    <stop offset="1" stop-color="#27B43E" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="abano-card swiper-slide">
+                        <figure>
+                            <span class="pid">A4</span>
+                            <a href="#abano4"><img src="./img/abanos/a4.jpg" alt="Imagem de lencos"></a>
+    
+                            <figcaption>
+                                <h3>Nome do Abano</h3>
+                                <p class="owner">por Verónica Dorcas</p>
+                                <span>10.000,00kz</span>
+                                <div class="social">
+                                    <a href="" class="midia facebook">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
+                                            <path
+                                                d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#18ACFE" />
+                                                    <stop offset="1" stop-color="#0163E0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="midia whatsapp">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                                fill="#BFC8D0" />
+                                            <path
+                                                d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                                fill="url(#paint0_linear_87_7264)" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                                fill="white" />
+                                            <path
+                                                d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#5BD066" />
+                                                    <stop offset="1" stop-color="#27B43E" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="abano-card swiper-slide">
+                        <figure>
+                            <span class="pid">A4</span>
+                            <a href="#abano4"><img src="./img/abanos/a4.jpg" alt="Imagem de lencos"></a>
+    
+                            <figcaption>
+                                <h3>Nome do Abano</h3>
+                                <p class="owner">por Verónica Dorcas</p>
+                                <span>10.000,00kz</span>
+                                <div class="social">
+                                    <a href="" class="midia facebook">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
+                                            <path
+                                                d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16"
+                                                    y2="29.917" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#18ACFE" />
+                                                    <stop offset="1" stop-color="#0163E0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="midia whatsapp">
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                        <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                                fill="#BFC8D0" />
+                                            <path
+                                                d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                                fill="url(#paint0_linear_87_7264)" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                                fill="white" />
+                                            <path
+                                                d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#5BD066" />
+                                                    <stop offset="1" stop-color="#27B43E" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-        </section>
-        
-        <!-- ############# EXIBICAO DE ABANOS ################# -->
-        <section id="abanoShow">
-            <h2>Nossos Modelos de abanos</h2>
-            <hr>
-            <div class="abano-container">
-                <div class="abano-card">
-                    <figure>
-                        <span class="pid">A1</span>
-                        <img src="./img/abanos/a1.jpg" alt="Imagem de lencos">
-                        <figcaption>
-                            <h3>Nome do lenco</h3>
-                            <span>10.000,00kz</span>
-                            <div class="social">
-                                <a href="" class="midia facebook">
-                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
-                                        <path
-                                            d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
-                                            fill="white" />
-                                        <defs>
-                                            <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917"
-                                                gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#18ACFE" />
-                                                <stop offset="1" stop-color="#0163E0" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </a>
-                                <a href="#" class="midia whatsapp">
-                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
-                                            fill="#BFC8D0" />
-                                        <path
-                                            d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
-                                            fill="url(#paint0_linear_87_7264)" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
-                                            fill="white" />
-                                        <path
-                                            d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
-                                            fill="white" />
-                                        <defs>
-                                            <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
-                                                gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#5BD066" />
-                                                <stop offset="1" stop-color="#27B43E" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </a>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="abano-card">
-                    <figure>
-                        <span class="pid">A2</span>
-                        <img src="./img/lencos/3.jpg" alt="Imagem de lencos">
-                        <figcaption>
-                            <h3>Nome do lenco</h3>
-                            <span>10.000,00kz</span>
-                            <div class="social">
-                                <a href="" class="midia facebook">
-                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
-                                        <path
-                                            d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
-                                            fill="white" />
-                                        <defs>
-                                            <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917"
-                                                gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#18ACFE" />
-                                                <stop offset="1" stop-color="#0163E0" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </a>
-                                <a href="#" class="midia whatsapp">
-                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="42px" height="42px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
-                                            fill="#BFC8D0" />
-                                        <path
-                                            d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
-                                            fill="url(#paint0_linear_87_7264)" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
-                                            fill="white" />
-                                        <path
-                                            d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
-                                            fill="white" />
-                                        <defs>
-                                            <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
-                                                gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#5BD066" />
-                                                <stop offset="1" stop-color="#27B43E" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </a>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -697,48 +975,57 @@
         <section id="perguntas">
             <h2>Perguntas Frequente</h2>
             <hr>
+            <p class="paragraph">Preparamos pra você algumas questões para eliminar as duvidas.</p>
             <div class="perg-container container">
 
                 <div class="pergunta">
                     <input type="radio" name="pergunta" id="pergunta1">
                     <label for="pergunta1"> » 1 Já vendem lenços e abanos feitos?</label>
                     <div class="perg-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolorem quae, tempore fugit, similique corporis corrupti saepe temporibus nisi odit at consequatur optio officiis quia distinctio. Officiis impedit tempora deleniti?
+                        <p>Sim. Temos alguns lenços e abanos já feitos.</p>
                     </div>
                 </div>
                 <div class="pergunta">
                     <input type="radio" name="pergunta" id="pergunta2">
                     <label for="pergunta2"> » 2 Podem fazer amarração de lenço diretamente na noiva?</label>
                     <div class="perg-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolorem quae, tempore fugit, similique corporis corrupti saepe temporibus nisi odit at consequatur optio officiis quia distinctio. Officiis impedit tempora deleniti?
+                        <p>Sim. Prestamos serviços em tempo real.</p><br>
+                        <p>Podemos nos mover até ao lugar acordado com o cliente para realizar a amarraçção de abanos.
+                        </p><br>
+                        <p>Mas não confeccionamos os abanos em tempo real pois estes requerem muito mais tempo em
+                            relação aos lenços.</p>
                     </div>
                 </div>
                 <div class="pergunta">
                     <input type="radio" name="pergunta" id="pergunta3">
                     <label for="pergunta3"> » 3 Posso enviar o meu próprio modelo para a confecção?</label>
                     <div class="perg-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolorem quae, tempore fugit, similique corporis corrupti saepe temporibus nisi odit at consequatur optio officiis quia distinctio. Officiis impedit tempora deleniti?
+                        <p>Sim. O cliente pode nos enviar o seu próprio modelo para a confecção.</p>
                     </div>
                 </div>
                 <div class="pergunta">
                     <input type="radio" name="pergunta" id="pergunta4">
                     <label for="pergunta4"> » 4 Quanto tempo leva a amarração de lenços ou abanos?</label>
                     <div class="perg-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolorem quae, tempore fugit, similique corporis corrupti saepe temporibus nisi odit at consequatur optio officiis quia distinctio. Officiis impedit tempora deleniti?
+                        <p>Dependendo dos fetios ou modelos, a amarração de abanos pode durar minutos ou horas. e a
+                            confecção de abanos pode durar horas.</p>
                     </div>
                 </div>
                 <div class="pergunta">
                     <input type="radio" name="pergunta" id="pergunta5">
                     <label for="pergunta5"> » 5 Como é feito o pagamento?</label>
                     <div class="perg-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolorem quae, tempore fugit, similique corporis corrupti saepe temporibus nisi odit at consequatur optio officiis quia distinctio. Officiis impedit tempora deleniti?
+                        <p>Aceitamos os pagamentos em QUESH ou BAI Direto. </p><br>
+                        <p>O cliente pode pagar antes, no processo ou depois, dependendo da sua opção. </p><br>
+                        <p>O pagamento pode ser feito no ato da entrega.</p><br>
                     </div>
                 </div>
                 <div class="pergunta">
                     <input type="radio" name="pergunta" id="pergunta6">
-                    <label for="pergunta6"> » 6 Como é feito o entrega?</label>
+                    <label for="pergunta6"> » 6 Como é feito a entrega?</label>
                     <div class="perg-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolorem quae, tempore fugit, similique corporis corrupti saepe temporibus nisi odit at consequatur optio officiis quia distinctio. Officiis impedit tempora deleniti?
+                        <p>A entrega pode ser ao domicílio, ou em qualquer outro lugar que confira segurança para ambas
+                            as partes. </p>
                     </div>
                 </div>
 
@@ -797,14 +1084,52 @@
             </div>
         </div>
 
+        <!-- ****** ABANO 1 ****** -->
+        <div class="lightbox" id="abano1">
+            <a href="#abanoShow" class="close">CLOSE</a>
+            <div class="lightbox-content">
+                <img src="./img/abanos/a1.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- ****** ABANO 2 ****** -->
+        <div class="lightbox" id="abano2">
+            <a href="#abanoShow" class="close">CLOSE</a>
+            <div class="lightbox-content">
+                <img src="./img/abanos/a2.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- ****** ABANO 3 ****** -->
+        <div class="lightbox" id="abano3">
+            <a href="#abanoShow" class="close">CLOSE</a>
+            <div class="lightbox-content">
+                <img src="./img/abanos/a3.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- ****** ABANO 4 ****** -->
+        <div class="lightbox" id="abano4">
+            <a href="#abanoShow" class="close">CLOSE</a>
+            <div class="lightbox-content">
+                <img src="./img/abanos/a4.jpg" alt="">
+            </div>
+        </div>
+
         <!-- LIGHTBOX END-->
     </main>
 
     <!-- FOOTER -->
     <footer>
-        
+
     </footer>
-<script src="./js/app.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS APP -->
+    <script src="./js/app.js"></script>
+   
 </body>
 
 </html>

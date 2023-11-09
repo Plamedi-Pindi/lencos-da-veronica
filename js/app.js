@@ -181,7 +181,7 @@ theme.addEventListener('click', tehme1)
 
 // ########## FUNCTIONS  ################
 
-function tehme1(){
+function tehme1() {
     const body = document.getElementsByTagName('body')[0];
     const headerH1 = document.querySelector('.hdr-content h1');
     const logoTheme = document.querySelector('.logo-theme');
@@ -199,12 +199,12 @@ function tehme1(){
     }
 
     filterContainer.style.boxShadow = "1px 1px 10px #222";
-    
+
     for (let i = 0; i < card.length; i++) {
         card[i].style.boxShadow = '3px 4px 10px #333';
     }
 
-    
+
 
 
 
@@ -235,6 +235,82 @@ function addHorizontalShow(verticalColor, horizontalColor) {
 // ########## PRELOADER  ################
 
 
+
+
+/****** SLIDE BUNNER *****/
+const banner_img1 = document.getElementById("banne_img1")
+const banner_img2 = document.getElementById("banne_img2")
+
+/**
+ * Define o intervalo de tempo para a troca de imagens
+ * neste caso esta com um intervalo de **/
+setInterval(() => {
+
+    if (banner_img1.style.display === "none") {
+
+        banner_img2.style.opacity = 0  // Elimina a opacidade da imagem 2
+
+        //Define um compasso de tempo de 8,1 segundos antes de comecar com a estilizacao
+        setTimeout(() => {
+            banner_img2.style.display = "none"      // Retira a renderizacao da imagem 2
+            banner_img1.style.display = "block"     // Renderiza a imagem 1
+        }, 810);
+
+        //Define um compasso de tempo de 8,2 segundos antes de comecar com a estilizacao
+        setTimeout(() => {
+            banner_img1.style.opacity = 1       //Torna visivel a opacidade da imagem 2
+        }, 820);
+
+
+    } else {
+
+        banner_img1.style.opacity = 0
+        //Define um compasso de tempo de 8,1 segundos antes de comecar com a estilizacao
+        setTimeout(() => {
+            banner_img1.style.display = "none"      //Retira a renderizacao da imagem 1
+            banner_img2.style.display = "block"     //Renderiza a imagem 2
+        }, 810);
+
+        //Define um compasso de tempo de 8,2 segundos antes de comecar com a estilizacao
+        setTimeout(() => {
+            banner_img2.style.opacity = 1       //Torna visivel a opacidade da imagem 2
+        }, 820);
+    }
+}, 6000)
+
+
+/**################# SWIPER SLIDE ######################**/
+var swiper = new Swiper(".abanoShow", {  
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            // spaceBetween: 20,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        },
+    },
+});
 
 
 
