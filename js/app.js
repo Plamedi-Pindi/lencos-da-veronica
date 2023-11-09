@@ -287,6 +287,7 @@ var swiper = new Swiper(".abanoShow", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets:true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -315,7 +316,7 @@ var swiper = new Swiper(".lencoShow", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        
+        dynamicBullets:true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
