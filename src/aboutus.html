@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/img/icon.png">
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,900&display=swap"
         rel="stylesheet">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- APP CSS -->
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="../public/sass/style.css">
+    
     <title>Sobre nós</title>
 </head>
 
@@ -23,7 +33,7 @@
         <section class="logo-theme ">
             <div class="logo-theme-content  container">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="">
+                    <img src="../public/img/logo.png" alt="">
                     <h1 class="logo">Quicadila</h1>
                 </a>
 
@@ -41,42 +51,36 @@
         <!-- SECTION LOGO AND THEME END-->
 
         <nav class="container">
+
             <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-house-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
-                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
-                </svg>
+                <div>
+                    <i class="bi bi-house"></i>
+                    <p>Início</p>
+                </div>
             </a>
             <a href="aboutus.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-file-person" viewBox="0 0 16 16">
-                    <path
-                        d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
-                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                </svg>
+                <div>
+                    <i class="bi bi-people"></i>
+                    <p>Sobre</p>
+                </div>
             </a>
-            <a href="index.html#news">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
-                </svg>
+            <a href="#news">
+                <div>
+                    <i class="bi bi-suit-heart"></i>
+                    <p>Novidades</p>
+                </div>
             </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-bag-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z" />
-                </svg>
+            <a href="#lencoShow">
+                <div>
+                    <i class="bi bi-bag"></i>
+                    <p>Lenços</p>
+                </div>
             </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-send-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                </svg>
+            <a href="#perguntas">
+                <div>
+                    <i class="bi bi-question-circle"></i>
+                    <p>Questões</p>
+                </div>
             </a>
 
         </nav>

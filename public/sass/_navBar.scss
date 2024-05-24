@@ -1,0 +1,49 @@
+@import './color';
+
+nav{
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    right: 0;    
+    margin: auto;
+    bottom: 10px;
+    width: 80%;
+    height: 56px;
+    // background: linear-gradient(#EE8A9B, $primary, #EE8A9B);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px #888;
+    background-color: #fff;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+        transition: 0.4s;
+        height: 100%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            i {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 13px;
+                margin-bottom: 0;
+                color: #888;
+            }
+        }
+    }
+
+
+
+}

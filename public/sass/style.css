@@ -226,6 +226,29 @@ header {
   transform: rotate(130deg);
   top: 16rem;
 }
+.header-content-container .midai_links {
+  position: absolute;
+  right: 10px;
+  top: 22rem;
+  box-shadow: 1px 5px 10px #888;
+  padding: 8px;
+  border-radius: 18px;
+}
+.header-content-container .midai_links ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.header-content-container .midai_links li i {
+  font-size: 25px;
+}
+.header-content-container .midai_links li a {
+  text-decoration: none;
+  color: #000;
+}
+.header-content-container .midai_links li:last-child {
+  margin-top: 1rem;
+}
 .header-content-container .midia {
   text-decoration: none;
   background-color: white;
@@ -257,18 +280,35 @@ nav {
   margin: auto;
   bottom: 10px;
   width: 80%;
-  height: 50px;
-  background: linear-gradient(#EE8A9B, #FFC0CB, #EE8A9B);
+  height: 56px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-radius: 30px;
-  box-shadow: 1px 4px 10px #b6b1b1;
+  border-radius: 10px;
+  box-shadow: 1px 5px 10px #888;
+  background-color: #fff;
 }
 nav a {
   text-decoration: none;
   color: inherit;
   transition: 0.4s;
+  height: 100%;
+}
+nav a div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+nav a div i {
+  font-size: 20px;
+  font-weight: 600;
+}
+nav a div p {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: #888;
 }
 
 .paragraph {
@@ -437,8 +477,9 @@ nav a {
 #lencoShow .lencos-card {
   min-width: 210px !important;
   height: 290px !important;
+  background: #fff;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 1px 6px 10px #6b6565;
+  box-shadow: 1px 5px 10px #888;
 }
 #lencoShow .lencos-card figure {
   width: 100%;
@@ -456,6 +497,7 @@ nav a {
 #lencoShow .lencos-card figure figcaption h3 {
   margin-bottom: 6px;
   margin-top: 10px;
+  font-size: 20px;
 }
 #lencoShow .lencos-card figure figcaption span {
   margin-top: 10px;
@@ -498,7 +540,7 @@ nav a {
   width: 210px !important;
   height: 290px !important;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 1px 6px 10px #6b6565;
+  box-shadow: 1px 5px 10px #888;
 }
 #abanoShow .abano-card figure {
   width: 100% !important;
@@ -607,95 +649,4 @@ nav a {
 .lightbox:target {
   opacity: 1;
   z-index: 100;
-}
-
-@media (min-width: 630px) {
-  #news,
-  #lencoShow,
-  #abanoShow {
-    width: 90%;
-    margin: 0 auto;
-  }
-  #news h2 {
-    margin-top: 4rem;
-  }
-  #lencoShow h2 {
-    margin-top: 2rem;
-  }
-  #abanoShow h2 {
-    margin-top: 2rem;
-  }
-  #perguntas {
-    width: 85%;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-  }
-  #perguntas h2 {
-    margin-top: 2rem;
-  }
-  .header-content-container {
-    height: 520px;
-  }
-}
-@media (min-width: 760px) {
-  .header-content-container {
-    height: 500px;
-    background: #f0e7e8;
-  }
-  .header-content-container .hdr-main-content {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-  }
-  .header-content-container .style-item {
-    z-index: 1;
-  }
-  .facebook {
-    display: none;
-  }
-}
-@media (min-width: 920px) {
-  nav {
-    display: none;
-  }
-  #desktop-nav {
-    width: 30%;
-    height: 100%;
-  }
-  .logo-theme-content {
-    width: 85%;
-  }
-  #desktop-nav ul {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #desktop-nav ul li {
-    list-style: none;
-  }
-  #desktop-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 400;
-    transition: ease 0.5s;
-    font-family: "Roboto", sans-serif;
-  }
-  #desktop-nav ul li a:hover {
-    text-decoration: none;
-    color: #EE8A9B;
-  }
-  .header-content-container .hdr-main-content {
-    padding: 0;
-  }
-  .header-content-container .hdr-main-content .hdr-content {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .header-content-container .hdr-main-content .banner {
-    height: 85%;
-  }
-  .swiper {
-    width: 85% !important;
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -228,6 +228,34 @@ header{
        top: 16rem;
     }
 
+    // MIDIA ==========================================
+
+    .midai_links{
+        position: absolute;
+        right: 10px;
+        top: 22rem;
+        box-shadow: 1px 5px 10px #888;
+        padding: 8px;
+        border-radius: 18px;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        li {
+            i {
+                font-size: 25px;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        li:last-child {
+            margin-top: 1rem;
+        }
+    }
+
     .midia{
         text-decoration: none;
         background-color: white;
